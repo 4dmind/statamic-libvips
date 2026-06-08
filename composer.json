@@ -1,0 +1,59 @@
+{
+    "name": "fdmind/statamic-libvips",
+    "description": "Use libvips as the image manipulation driver for Statamic's Glide, alongside GD and Imagick.",
+    "keywords": ["statamic", "addon", "glide", "libvips", "vips", "images", "image-processing"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "4DMIND",
+            "email": "krzemo@4dmind.com",
+            "homepage": "https://github.com/4dmind"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/4dmind/statamic-libvips/issues",
+        "source": "https://github.com/4dmind/statamic-libvips"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fdmind\\StatamicLibvips\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Fdmind\\StatamicLibvips\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "statamic/cms": "^5.0 || ^6.0",
+        "jcupitt/vips": "^2.4",
+        "symfony/process": "^6.0 || ^7.0",
+        "ext-pdo": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0 || ^10.8"
+    },
+    "suggest": {
+        "ext-vips": "The native vips PHP extension is faster than the FFI fallback used by jcupitt/vips."
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Libvips",
+            "description": "Use libvips as the image manipulation driver for Statamic's Glide."
+        },
+        "laravel": {
+            "providers": [
+                "Fdmind\\StatamicLibvips\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

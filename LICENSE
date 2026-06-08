@@ -1,0 +1,70 @@
+Copyright (c) 2026 4DMIND. All rights reserved.
+
+This software and its source code (the "Software") are the exclusive property
+of 4DMIND.
+
+1. Grant of License
+   4DMIND grants you a non-exclusive, worldwide, royalty-free license to
+   download, install, and use the Software, including in commercial projects,
+   for as long as you comply with the terms of this license.
+
+2. Restrictions
+   You may NOT:
+   a. redistribute, resell, sublicense, lease, rent, publish, or otherwise make
+      the Software (in whole or in part, in original or modified form) available
+      to any third party as a standalone product or package;
+   b. remove or alter this license, any copyright notice, or any attribution
+      contained in the Software.
+
+   For clarity, installing the Software as a dependency of your own application
+   (for example via Composer) and deploying that application is permitted. What
+   is prohibited is redistributing the Software itself as a separate offering.
+
+3. Ownership
+   The Software is licensed, not sold. 4DMIND retains all right, title, and
+   interest in and to the Software, including all intellectual property rights.
+
+4. No Warranty
+   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED
+   "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND,
+   WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED
+   TO ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+   TITLE, NON-INFRINGEMENT, ACCURACY, RELIABILITY, OR THAT THE SOFTWARE WILL BE
+   UNINTERRUPTED, SECURE, OR ERROR-FREE. YOU ASSUME THE ENTIRE RISK ARISING OUT
+   OF THE USE OR PERFORMANCE OF THE SOFTWARE.
+
+5. Limitation of Liability
+   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL 4DMIND,
+   ITS OWNERS, EMPLOYEES, OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+   OTHER LIABILITY OF ANY KIND — INCLUDING BUT NOT LIMITED TO ANY DIRECT,
+   INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, PUNITIVE, OR CONSEQUENTIAL DAMAGES;
+   LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS; SERVICE INTERRUPTION;
+   OR COMPUTER OR SYSTEM FAILURE — WHETHER IN AN ACTION OF CONTRACT, TORT
+   (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, ARISING FROM, OUT OF,
+   OR IN CONNECTION WITH THE SOFTWARE, ITS USE, MALFUNCTION, OR INABILITY TO BE
+   USED, EVEN IF 4DMIND HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES AND
+   EVEN IF A REMEDY FAILS OF ITS ESSENTIAL PURPOSE. WHERE LIABILITY CANNOT BE
+   FULLY EXCLUDED UNDER APPLICABLE LAW, 4DMIND'S TOTAL AGGREGATE LIABILITY SHALL
+   NOT EXCEED ZERO (USD 0.00), THE AMOUNT YOU PAID FOR THE SOFTWARE BEING NIL.
+
+6. No Obligation to Support or Maintain
+   4DMIND has and assumes NO obligation to provide support, maintenance,
+   updates, bug fixes, patches, security fixes, or any other services in
+   connection with the Software. The Software may be modified, suspended, or
+   discontinued at any time without notice and without liability.
+
+7. Indemnification
+   You agree to indemnify, defend, and hold harmless 4DMIND from and against any
+   claims, liabilities, damages, losses, and expenses (including reasonable
+   legal fees) arising out of or in any way connected with your use of, or
+   inability to use, the Software.
+
+8. Governing Law and Jurisdiction
+   This license and any dispute or claim arising out of or in connection with it
+   or the Software (including non-contractual disputes or claims) shall be
+   governed by and construed in accordance with the laws of the Republic of
+   Poland. The courts of the Republic of Poland having jurisdiction over the
+   registered seat of 4DMIND shall have exclusive jurisdiction to settle any
+   such dispute or claim. Where mandatory consumer-protection law grants you
+   rights that cannot be excluded or limited by agreement, nothing in this
+   license affects those rights.
