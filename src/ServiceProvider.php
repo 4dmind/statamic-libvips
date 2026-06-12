@@ -68,13 +68,40 @@ class ServiceProvider extends AddonServiceProvider
     {
         // Statamic's own ImageValidator binding calls ImageManager::withDriver()
         // which throws on the "vips" string; swap in our extension-only validator.
+        // For every other driver we faithfully rebuild core's validator — but how
+        // it's constructed depends on the installed Intervention Image major
+        // version, so that work lives in makeNativeImageValidator().
         $this->app->bind(ImageValidator::class, function ($app) {
             if ($this->usingVips($app)) {
                 return new VipsImageValidator;
             }
 
-            return new ImageValidator($this->interventionDriver($app));
+            return $this->makeNativeImageValidator($app);
         });
+    }
+
+    /**
+     * Rebuild Statamic's own ImageValidator for the non-vips path, matching the
+     * installed Intervention Image version:
+     *
+     *  - Intervention v2 (Statamic with intervention/image ^2): ImageValidator
+     *    validates extensions from the driver *string* and takes no driver
+     *    instance — and ImageManager has no static gd()/imagick() factories, so
+     *    calling them is a fatal "undefined method".
+     *  - Intervention v3: ImageValidator requires a DriverInterface.
+     *
+     * We reflect on the constructor to tell them apart, keeping the addon a safe
+     * drop-in on both — including while dormant on a plain gd/imagick site.
+     */
+    protected function makeNativeImageValidator($app): ImageValidator
+    {
+        $constructor = (new \ReflectionClass(ImageValidator::class))->getConstructor();
+
+        if (! $constructor || $constructor->getNumberOfRequiredParameters() === 0) {
+            return new ImageValidator;
+        }
+
+        return new ImageValidator($this->interventionDriver($app));
     }
 
     protected function usingVips($app): bool
